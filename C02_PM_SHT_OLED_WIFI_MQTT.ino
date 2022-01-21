@@ -39,7 +39,6 @@ Please set in the code below which sensor you are using and if you want to conne
 #include <WiFiManager.h>
 #include <ESP8266WiFi.h>
 #include <ArduinoOTA.h>
-//#include <ESP8266HTTPClient.h>
 #include <PubSubClient.h>
 #include <Wire.h>
 #include "SSD1306Wire.h"
@@ -89,9 +88,7 @@ void setup(){
   //Start LittleFS
   if(LittleFS.begin()){
     Serial.println("Mounted LittleFS");
-
     readConfig("/config.json");  
-
   } else {
     Serial.println("An Error has occurred while mounting LittleFS");
   }
@@ -149,7 +146,7 @@ void setup(){
   Serial.println(WiFi.localIP());
 
   showTextRectangle(mqtt_locn,mqtt_room,true);
-  delay(1000);
+  delay(DISPLAY_DELAY);
 }
 
 void loop(){
