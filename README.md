@@ -19,16 +19,16 @@ Please install ESP8266 board manager (tested with version 3.0.0)
 
 The following libraries need to be installed:
 
-WifiManager by tzapu, tablatronix
-  https://github.com/tzapu/WiFiManager
-PubSubClient by Nick O'Leary
-  https://pubsubclient.knolleary.net/
-  https://github.com/knolleary/pubsubclient
-ArduinoJson by Benoît Blanchon
-  https://arduinojson.org/
-  https://github.com/bblanchon/ArduinoJson
-ESP8266 and ESP32 OLED driver for SSD1306 displays by ThingPulse, Fabrice Weinberg
-  https://github.com/ThingPulse/esp8266-oled-ssd1306
+  * WifiManager by tzapu, tablatronix
+    https://github.com/tzapu/WiFiManager
+  * PubSubClient by Nick O'Leary
+    https://pubsubclient.knolleary.net/
+    https://github.com/knolleary/pubsubclient
+  * ArduinoJson by Benoît Blanchon
+    https://arduinojson.org/
+    https://github.com/bblanchon/ArduinoJson
+  * ESP8266 and ESP32 OLED driver for SSD1306 displays by ThingPulse, Fabrice Weinberg
+    https://github.com/ThingPulse/esp8266-oled-ssd1306
 
 Configuration:
 Please set in the code below which sensor you are using and if you want to connect it to WiFi.
